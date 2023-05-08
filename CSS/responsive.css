@@ -1,0 +1,162 @@
+@media screen and (max-width: 1200px) {
+  .border-custom {
+    border-style: double !important;
+    border-width: 10px !important;
+    border-color: var(--acsentColor) !important;
+    height: 560px !important;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  #welcome h3 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 18px;
+    margin-top: 3px;
+  }
+
+  #welcome p {
+    font-size: 14px;
+  }
+  #hero .hero-info {
+    text-align: center !important;
+  }
+
+  #hero .hero-info h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #hero .hero-info p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #hero p .downloadcv {
+    font-size: 14px;
+  }
+
+  #hero .border-custom {
+    height: 820px !important;
+  }
+
+  #hero .btn-custom1 {
+    font-size: 14px;
+  }
+
+  .fontNav-custom {
+    font-size: 12px !important;
+  }
+
+  #About p {
+    font-size: 14px !important;
+  }
+
+  #Portofolio .carousel-caption h5 {
+    font-size: 15px !important;
+  }
+
+  #Portofolio p {
+    font-size: 10px !important;
+    color: #000;
+  }
+
+  #Portofolio .carousel-custom {
+    visibility: visible;
+  }
+
+  #Portofolio .carousel-custom1 {
+    visibility: hidden;
+  }
+}
+/* hp landscape */
+@media screen and (max-width: 576px) {
+  h5 {
+    font-size: 13px;
+    margin-top: 5px !important;
+    padding-bottom: 5px;
+  }
+
+  #welcome {
+    width: 80%;
+    margin-left: 30px;
+    display: flexbox;
+  }
+
+  #welcome h3 {
+    font-size: 13px;
+  }
+  #welcome p {
+    font-size: 10px;
+  }
+  #hero .hero-info h3 {
+    font-size: 16px;
+  }
+
+  #hero .hero-info p {
+    font-size: 12px;
+  }
+  #hero .btn-custom1 {
+    font-size: 12px;
+  }
+
+  #hero p .downloadcv {
+    font-size: 12px;
+  }
+  .image {
+    width: 200px;
+    height: 250px;
+  }
+
+  #hero .hero-img img {
+    height: 300px !important;
+    width: 225px !important;
+  }
+
+  #hero .container-custom {
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  #hero .hover-me {
+    top: 249px !important;
+    font-size: 12px;
+  }
+
+  #About p {
+    font-size: 10px !important;
+  }
+
+  #Contact label {
+    font-size: 13px;
+  }
+
+  #Contact .btn-custom {
+    font-size: 14px;
+  }
+
+  #Contact .thanks {
+    font-size: 14px !important;
+  }
+}
+/* hp */
+@media screen and (max-width: 350px) {
+  h5 {
+    font-size: 11px;
+    margin-top: 10px !important;
+  }
+
+  #About p {
+    font-size: 9px !important;
+  }
+
+  #welcome {
+    width: 80%;
+    margin-left: 30px;
+    margin-right: 50px;
+    display: flexbox;
+  }
+}

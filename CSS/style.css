@@ -1,0 +1,506 @@
+:root {
+  --mainColor: #0100a4;
+  --secondColor: #a8a8a8;
+  --acsentColor: #57ffff;
+}
+
+body {
+  background-color: var(--mainColor);
+  font-family: 'Press Start 2P', cursive;
+  color: var(--acsentColor);
+  /* height: 100%; */
+}
+
+.border-custom {
+  border-style: double !important;
+  border-width: 10px !important;
+  border-color: var(--acsentColor) !important;
+  height: 560px;
+}
+
+.fade {
+  opacity: 0;
+  animation: Fade 1s ease;
+}
+
+.active {
+  animation: Fade 1s ease;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.active {
+  opacity: 1;
+}
+/* .border-custom1 {
+  border-style: double !important;
+  border-width: 10px !important;
+  border-color: var(--acsentColor) !important;
+  height: 610px;
+} */
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--secondColor);
+  font-size: 15px;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link.active {
+  color: var(--secondColor) !important;
+  background-color: var(--mainColor) !important;
+  font-weight: 700;
+}
+
+.nav-tabs {
+  border-color: var(--acsentColor) !important;
+  border: 1000px !important;
+}
+
+.nav-link {
+  border-color: var(--mainColor) !important;
+  border: 1px !important;
+}
+.nav-link:hover {
+  color: var(--secondColor) !important;
+  background-color: #000;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  fill: #000 !important;
+}
+/* End Navbar */
+
+/* welcome Section */
+#welcome {
+  color: #000;
+
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin: 100px;
+
+  height: 84%;
+  position: absolute;
+}
+#welcome .container {
+  background-color: var(--secondColor);
+  animation: container 2s forwards;
+}
+
+#welcome .box-custom {
+  box-shadow: 30px 20px !important;
+}
+
+.D {
+  animation: warna1 5s linear infinite alternate both;
+}
+
+.O {
+  animation: warna2 5s linear infinite alternate both;
+}
+
+.S {
+  animation: warna3 5s linear infinite alternate both;
+}
+
+@keyframes warna1 {
+  0%,
+  10% {
+    color: red;
+  }
+  20% {
+    color: green;
+  }
+  30% {
+    color: yellow;
+  }
+  40% {
+    color: orange;
+  }
+  50% {
+    color: blue;
+  }
+  65% {
+    color: violet;
+  }
+  85% {
+    color: indigo;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes warna2 {
+  0%,
+  10% {
+    color: yellow;
+  }
+  20% {
+    color: green;
+  }
+  30% {
+    color: red;
+  }
+  40% {
+    color: orange;
+  }
+  50% {
+    color: violet;
+  }
+  65% {
+    color: indigo;
+  }
+  85% {
+    color: blue;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+@keyframes warna3 {
+  0%,
+  10% {
+    color: green;
+  }
+  20% {
+    color: yellow;
+  }
+  30% {
+    color: orange;
+  }
+  40% {
+    color: indigo;
+  }
+  50% {
+    color: blue;
+  }
+  65% {
+    color: red;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: green;
+  }
+}
+
+.container-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1345px;
+  backdrop-filter: blur(5px);
+}
+
+.container-blur.active {
+  display: block;
+}
+
+.continer-blur {
+  display: none;
+}
+@keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* End Welcome */
+
+/* CTA */
+#welcome .btn-custom {
+  color: #000;
+  border-color: #000;
+}
+
+#welcome .btn-custom:hover {
+  color: var(--secondColor) !important;
+  background-color: #000;
+  font-weight: 700;
+}
+/* End CTa */
+
+/* Hero Section */
+
+.bg-judul {
+  top: 6px !important;
+  color: var(--acsentColor);
+  background-color: var(--mainColor);
+}
+#hero .hero-img img {
+  height: 500px;
+  width: 270px;
+}
+
+#hero .border-custom {
+  border-color: var(--secondColor);
+  border-style: dashed;
+}
+
+#hero .btn-custom1 {
+  border-color: var(--acsentColor) !important;
+  color: var(--acsentColor) !important;
+}
+
+/* #hero .btn-custom1:hover {
+  border-color: var(--acsentColor);
+  color: var(--mainColor) !important;
+  background-color: var(--acsentColor);
+} */
+
+#hero .Social-icon svg {
+  fill: var(--acsentColor);
+  background-color: var(--mainColor);
+}
+
+#hero .Social-icon svg:hover {
+  fill: var(--mainColor) !important ;
+  background-color: var(--acsentColor) !important;
+  border-radius: 20%;
+  padding: 2px;
+}
+
+#hero .downloadcv:hover {
+  color: var(--mainColor);
+  background-color: var(--acsentColor);
+  animation: downloadcv 4s linear infinite alternate both;
+  border-color: var(--acsentColor) !important;
+}
+
+@keyframes downloadcv {
+  0% {
+    background-color: var(--acsentColor);
+    border-color: red !important;
+  }
+  10% {
+    background-color: red;
+    border-color: orange !important;
+  }
+  20% {
+    background-color: orange;
+    border-color: var(--acsentColor) !important;
+  }
+  30% {
+    background-color: yellow;
+    border-color: green !important;
+  }
+  40% {
+    background-color: green;
+    border-color: blue !important;
+  }
+  50% {
+    background-color: blue;
+    border-color: indigo !important;
+  }
+  65% {
+    background-color: indigo;
+    border-color: violet !important;
+  }
+  85% {
+    background-color: violet;
+    border-color: var(--acsentColor) !important;
+  }
+  100% {
+    background-color: var(--acsentColor);
+    border-color: violet !important;
+  }
+}
+
+#hero .container-custom {
+  position: relative;
+  height: 350px;
+  width: 300px;
+}
+
+#hero .image {
+  display: block;
+  fill: var(--acsentColor);
+}
+
+#hero .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 94%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+#hero .container:hover .overlay {
+  opacity: 1;
+}
+
+#hero .icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#hero img {
+  width: 266px !important;
+  height: 376px !important;
+}
+
+#hero .border-custom2:hover {
+  color: #eee;
+}
+
+#hero .border-custom2 {
+  border-style: dashed !important;
+  padding: 5px !important;
+}
+
+#hero .top-50 {
+  top: 330px !important;
+}
+
+#hero .color-acsent {
+  color: var(--acsentColor);
+}
+/* End Hero */
+
+/* About Section */
+#About .saya {
+  font-size: 15px;
+  text-align: justify;
+}
+
+#About .Quote {
+  font-size: 15px;
+  text-align: center;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--acsentColor);
+  --bs-tooltip-color: var(--mainColor);
+}
+
+#About .tooltipQuote {
+  color: var(--acsentColor);
+}
+
+#About .tooltipQuote:hover {
+  color: var(--mainColor);
+  background-color: var(--acsentColor);
+}
+
+#About .d-flex {
+  height: 500px;
+}
+
+/* End About */
+
+/* Portofolio Section */
+.border-custom2 {
+  border-style: dashed !important;
+  padding: 5px;
+}
+
+/* .carousel-item {
+  transition: transform 2s ease, opacity 1s ease-out;
+}
+
+.slide {
+  transition: transform 2s ease;
+}
+.carousel-control-next-icon:hover {
+  background-color: var(--acsentColor);
+}
+
+.carousel-control-prev-icon:hover {
+  background-color: var(--acsentColor);
+}
+
+#Portofolio .carousel-caption h5 {
+  font-size: 20px;
+  color: #000;
+}
+
+#Portofolio p {
+  font-size: 15px;
+  color: #000;
+} */
+
+/* #Portofolio .border-custom {
+  border-style: double !important;
+  border-width: 10px !important;
+  border-color: var(--acsentColor) !important;
+  height: 100%;
+} */
+
+#Portofolio .border-custom {
+  border-style: double !important;
+  border-width: 10px !important;
+  border-color: var(--acsentColor) !important;
+  height: 100%;
+}
+
+#Portofolio .carousel-custom {
+  visibility: hidden;
+}
+
+#Portofolio .carousel-custom1 {
+  visibility: visible;
+}
+
+/* End Portofolio */
+
+/* Contact Section */
+#Contact .btn-custom {
+  border-color: var(--acsentColor) !important;
+  color: var(--acsentColor) !important;
+}
+
+#Contact .btn-custom:hover {
+  border-color: var(--acsentColor);
+  color: var(--mainColor) !important;
+  background-color: var(--acsentColor);
+}
+
+#Contact .Social-icon {
+  width: 150px;
+}
+
+#Contact .Social-icon svg {
+  fill: var(--acsentColor);
+  background-color: var(--mainColor);
+}
+
+#Contact .Social-icon svg:hover {
+  fill: var(--mainColor);
+  background-color: var(--acsentColor);
+  border-radius: 20%;
+  padding: 2px;
+}
+/* End Contact */
