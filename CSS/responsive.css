@@ -9,6 +9,11 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  #Portofolio .carousel-item {
+    height: 300px;
+    /* Atur tinggi untuk perangkat yang lebih kecil */
+  }
+
   #welcome h3 {
     font-size: 18px;
   }
@@ -21,6 +26,7 @@
   #welcome p {
     font-size: 14px;
   }
+
   #hero .hero-info {
     text-align: center !important;
   }
@@ -72,6 +78,7 @@
     visibility: hidden;
   }
 }
+
 /* hp landscape */
 @media screen and (max-width: 576px) {
   h5 {
@@ -89,9 +96,11 @@
   #welcome h3 {
     font-size: 13px;
   }
+
   #welcome p {
     font-size: 10px;
   }
+
   #hero .hero-info h3 {
     font-size: 16px;
   }
@@ -99,6 +108,7 @@
   #hero .hero-info p {
     font-size: 12px;
   }
+
   #hero .btn-custom1 {
     font-size: 12px;
   }
@@ -106,6 +116,7 @@
   #hero p .downloadcv {
     font-size: 12px;
   }
+
   .image {
     width: 200px;
     height: 250px;
@@ -141,7 +152,13 @@
   #Contact .thanks {
     font-size: 14px !important;
   }
+
+  #Portofolio .carousel-item {
+    height: 200px;
+    /* Atur tinggi untuk perangkat yang lebih kecil lagi */
+  }
 }
+
 /* hp */
 @media screen and (max-width: 350px) {
   h5 {

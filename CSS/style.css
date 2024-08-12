@@ -474,6 +474,22 @@ h3 {
   visibility: visible;
 }
 
+#Portofolio .carousel-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Atur agar gambar memenuhi container */
+}
+
+#Portofolio .carousel-item {
+  width: 100%;
+  height: 550px; /* Atur tinggi tetap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Untuk memotong bagian gambar yang lebih besar */
+}
+
+
 /* End Portofolio */
 
 /* Contact Section */
