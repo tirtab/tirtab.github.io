@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochamad Tirta Bening || Web Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2baccd7ba8.js"></script>
+
+    <!-- Custom CSS -->
+    <!-- PERBAIKAN: Path diubah dari css/style.css menjadi style.css agar file termuat -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader-container" id="loader">
+      <div class="loader-text">LOADING SYSTEM</div>
+    </div>
+
+    <!-- Welcome Modal -->
+    <div class="container-blur" id="blur"></div>
+    <section id="welcome">
+      <div class="container p-4 box-custom">
+        <div class="border border-3 border-black p-4">
+          <div class="text-center">
+            <h3 class="mb-3">
+              Welcome to MTB-<span class="rainbow-text">DOS</span>
+            </h3>
+            <p class="mb-3">
+              Copyright (C) Mochamad Tirta Bening Corporation, 2025.<br />All
+              rights reserved.
+            </p>
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <div class="terminal-button red"></div>
+                <div class="terminal-button yellow"></div>
+                <div class="terminal-button green"></div>
+              </div>
+              <div class="terminal-content" id="terminal-anim"></div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-custom mt-3"
+              onclick="closeWelcome()"
+            >
+              <i class="fas fa-power-off me-2"></i>START SYSTEM
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          MTB-<span class="rainbow-text">DOS</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#home"
+                onclick="showSection('home')"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" onclick="showSection('about')"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#portfolio"
+                onclick="showSection('portfolio')"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contact"
+                onclick="showSection('contact')"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="tab-content">
+      <!-- Home Section -->
+      <section id="home" class="content-section">
+        <div class="section-container">
+          <h5 class="section-title">HOME</h5>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4">
+                <div class="hero-info">
+                  <h3 class="mb-4">
+                    Halo!<br />
+                    Saya
+                    <span
+                      class="typing-text rainbow-text"
+                      id="typing-name"
+                    ></span>
+                  </h3>
+                  <p>
+                    Fresh Graduate Teknik Informatika yang passionate dengan
+                    teknologi, programming, dan Artificial Intelligence.
+                  </p>
+                  <a
+                    href="https://drive.google.com/drive/folders/1qy5VcYsZ3INf8O9NdFrlirrzxi6zeauU?usp=share_link"
+                    class="btn-custom"
+                    target="_blank"
+                  >
+                    <i class="fas fa-download me-2"></i>DOWNLOAD CV
+                  </a>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills-grid mt-5">
+                  <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h6>HTML/CSS</h6>
+                  </div>
+                  <div class="skill-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="52"
+                      height="52"
+                      viewBox="0,0,256,256"
+                    >
+                      <g
+                        fill="#57ffff"
+                        fill-rule="nonzero"
+                        stroke="none"
+                        stroke-width="1"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="10"
+                        stroke-dasharray=""
+                        stroke-dashoffset="0"
+                        font-family="none"
+                        font-weight="none"
+                        font-size="none"
+                        text-anchor="none"
+                        style="mix-blend-mode: normal"
+                      >
+                        <g transform="scale(5.33333,5.33333)">
+                          <path d="M16,39.609l7,4v-39.609l-7,4z"></path>
+                          <path d="M23,12.433l-17,9.817v-8.5l17,-9.817z"></path>
+                          <path d="M32,39.609l-7,4v-39.609l7,4z"></path>
+                          <path d="M25,12.433l17,9.817v-8.5l-17,-9.817z"></path>
+                          <path d="M29,19.732v7.633l7,4.042v-7.632z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                    <h6 style="padding-top: 3px">Tensorflow</h6>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEXUlEQVR4nO2ZSYgdVRSGq50VZ4kTIjiLGEVUBFFjFkocSFxY51TStsFEA9EsnOlAYxBMDCI40moSdeOAhihiNgquRFBQg8lK3SSIitiixqkF9ZOfPgXPR15V9XtV1RH6wF3UdOo/9557hv8myazMyqzULitgf4NNBr86/GLwjcM2h1cN7s/gggSGkpmWFI43WG0wrOsAfW0829dgvcM/DnQPg68MHhyGk1oHvgiOdHjU4U+Dn3WdwXkCa/C3gK2BfcKozOCPPRnhU0M6nkhhTjvoYchhpcG74R7rA+jmTmApLNX9FA52+LjAAGJMZHBjo9g1SwvhsPx6Huy3FA7SChh83eEeL8tQrYLBlgrg6RjPSG+twK+HQwTGYZXDXw7bHTYYzO8w7gC5iwAsgAN1z+DxaYInJuBt/bMW8LEZ3wpXWNX1s5X5LAt8DlxyAxzjMGJwi8GYwbjB59MwYmstK+HwpBQOw+EZ3NHl56dkcInDDwZrFZXK9C2GMxzWRYilzJ0GAp/Bwg6wRxvcHLP4kcMresfgfD2brm4Z67CxghHeF/gUDo3Iss7hGrlS0oA4LHeYLIpOcse+fyAfT2HuTXBsCqcrwji8WWcCcriyyAiDp6elUKFSM6PN6/BTKFqewXFKVk3Ea59aiV6rMJnBiZWVabYdfuuahXE902ZNGhKDTQWrUPG/MCR/d3isS8GHepyXCE3IMJzQKzoZ7KxUAKZwTgq3Kes6/JgvoWJ50oIYPFywChdXUXC7w7exD+42eM/hTGXaNgxI4ayCvXBvqQLF97D2oTx0GlyhbNuGARKDL3oY8FpSJgYfyHUEWtcReXY7PJu0JAbP9TBgW+nHDu8bnBu1zEYlNIfU4b4WDRjrsQe+K/1YM74ETs2X0eANRR6VzK2gTwpzwu9VPj5N7V6X5atbQV6TAVd3ZF+iTZxfe5PRlAulMCdK3rwN3LAEjmoyA1fdxAafVvl4XPFfcd9hNIUjIsVvT1oShy/7DqPqssLad7Rxo1XcLLZBCW0mE5nBPaUKgh7Ry9+rYRfno25ModXh8qYNsCkuaY8GpHBhJSUOO6JFnBvE1O7gbkpbxkGLOe+qgjvGrspsnmqOFE42eLFrCceaZNIcnh+8nA5uM1rK/5S2KSyLGmnZXt3QSOTvnWSVRgYLIiJN5rVSHZLCvJKW8qm+lctyJTKDW4NJGImN9kAd5JPDSFlT3w/rkYO/zuETldgGa6LAuzSDq0R3BEd6p1rQPnSryu3p8x1ua8kgojK6Q9ll3SRuDJG8a6vkCcV5vStW20vA5334QKIaSDRfKF1UYdZ2xDujDis0MrjL4QWDz8pAe93UokS+LsI1eM5HqoLodxhsrY3czUWzsRjOjp65SfDjjVa+KjXizKtu8BPq/JI2RIxF0B9F4a/qmFSc7ztU1lC7jBaUv0WuslPRSDqSGRcY0tFpHIC8FLljl0qROOCbiGPW11VnZXDRXnHMOiuzkvz/5V98ZuY06Q8f5QAAAABJRU5ErkJggg=="
+                      alt="anaconda--v2"
+                      width="52"
+                      height="52"
+                    />
+                    <h6 style="padding-top: 2px">Anaconda</h6>
+                  </div>
+                  <div class="skill-item">
+                    <img src="IMG/Icon/icons8-flask-60.png" alt="flask">
+                    <h6>Flask</h6>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-python" style="padding-top: 10px"></i>
+                    <h6 style="padding-top: 4px">Python</h6>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC8UlEQVR4nO2ZyWtUQRCHG0wuKhHivuFJEBRcDh6iGBC8SEI02lUzmYAiOComKCoKin+A+8nlIuKCkah4EA+Cy8GTeBJB4nJRxINbouIWl09K3ugwvIxm5r3RkfdBQdP0VFdN93v96tfOJST8wMMIheMKvQo9Cq2umhA4pkDOBPpTMN1VCwrP8hMIbJOrFgRuFybgIV2yQ4UGgX0eVnsY4mJGYLHAh7wEbmShtiRnHmYpfM5ztut3v0nBWA/tCkcEbgk8VnhnZm3rUzgskGmHMWE+0jBVoSMFy0sO3hDYWrCcd4qMXaDQbQ9dyB4eyD4JnPEw38VBChYWTHg0ZMwEgRODCDrUBC62wZTIk/CwQuCywoEM1BUEv1ThbbnB6y97o9DiKoHCdoVvEQZPsBJfFbbFGrzA5iIB3BM4K7DbHkSFlQo+MGt3COwJxtwvksyGWIIPAsn/53uDZ6DVQ/1g/S2BkQLLFE4q9OWvhPVHGnwGxgu8Cia4a2dDEwyNyn87DFPIBt9AlsgLD+Oi/PcvmFOBNY1Q42KiEWo8rFV4qXAuEqcCcwSueJjoKkQGJilcswO1bGcKTWWdiiWShVqbu9LzJiQkJCQkJCT8Vwg0/42PuUaoScGish2lYLbA1Up+TitMFrguMDMShwLnrciwYiPOgiYLtSlYH1R/3ZGWlEGVZOVej1VmVgZG5d/DcIV1uWJf4LkpfS5KTO4LpI9cUW+F+Cnr9zB6sP5MXvQgCqcFXucX9aY7uTgQ2FhEDnkQbLW9Ap0eVuVkFWtbn4nFNkbgYRF5ptPFiYlPBSsRpbC1Jdbg85JoCeTAyKRFgWZXSf55cfdPEZin0GWS+SAC/2gPr0KDqwR2mCnsVNghMCNsjL2JFNoEDincVHiUu+AI2tZ30K6N0jCqIoEbJiMqfMlb8v6y7q4qiYd6hfchW6AvSm00NkJuan6ah7nuXycN0wZKwN5CrhpQuBSSQJerFjJQZ28WgacKTwT2V8X+d1XCd6yZNJrb6iFMAAAAAElFTkSuQmCC"
+                      alt="jupyter"
+                      width="52"
+                      height="52"
+                    />
+                    <h6 style="padding-top: 13px">Jupyter</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="profile-container">
+                  <div class="profile-card">
+                    <div class="profile-front">
+                      <i
+                        class="fas fa-user-circle"
+                        style="font-size: 150px; color: var(--acsentColor)"
+                      ></i>
+                    </div>
+                    <div class="profile-back">
+                      <!-- PERBAIKAN: Mengembalikan tautan gambar asli -->
+                      <img
+                        src="IMG/0a5ada4c-dc4c-4893-8e45-c610df4dabd8.png"
+                        alt="Mochamad Tirta Bening"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-icons">
+                  <a
+                    href="https://www.facebook.com/mochamad.bening/"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://github.com/tirtab"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/mochamad.bening/"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6288222089799"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/mochamad-tirta-bening-413a06190/"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="content-section" style="display: none">
+        <div class="section-container">
+          <h5 class="section-title">ABOUT ME</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="terminal-window">
+                  <div class="terminal-header">
+                    <div class="terminal-button red"></div>
+                    <div class="terminal-button yellow"></div>
+                    <div class="terminal-button green"></div>
+                  </div>
+                  <div class="terminal-content">user@mtb-dos:~$ whoami</div>
+                </div>
+
+                <div class="mt-4">
+                  <blockquote
+                    class="text-center mb-4"
+                    style="font-size: 20px; color: var(--greenTerminal)"
+                  >
+                    <i class="fas fa-quote-left"></i>
+                    Hidup sebagai programmer itu seperti menyelesaikan teka-teki
+                    setiap hari.
+                    <i class="fas fa-quote-right"></i>
+                    <br />
+                    <a
+                      href="https://akos.ma/about/"
+                      style="color: var(--greenTerminal); text-decoration: none"
+                      ><small>- Adrian Kosmaczewski</small></a
+                    >
+                  </blockquote>
+
+                  <p
+                    style="
+                      font-size: 20px;
+                      line-height: 1.8;
+                      text-align: justify;
+                    "
+                  >
+                    Saya adalah fresh graduate Teknik Informatika dengan
+                    spesialisasi utama di Computer Vision dan kompetensi
+                    pendukung di NLP serta Data Science. Memiliki pengalaman
+                    langsung yang solid sebagai AI/Computer Vision Engineer
+                    Intern di Anaheim Nimbus Universal, didukung oleh
+                    penyelesaian proyek studi independen dan skripsi di bidang
+                    yang sama. Fondasi AI dikuatkan melalui program studi
+                    independen (Orbit Future Academy) dan bootcamp (Dicoding x
+                    IDCamp), termasuk penyelesaian tugas praktis untuk NLP dan
+                    Data Science. Memadukan spesialisasi yang mendalam dengan
+                    pemahaman luas, serta siap mengaplikasikan keterampilan
+                    untuk pengembangan solusi AI yang inovatif.
+                  </p>
+
+                  <div class="mt-4">
+                    <h4
+                      class="mb-3"
+                      style="
+                        font-family: 'Press Start 2P', cursive;
+                        font-size: 14px;
+                        color: var(--acsentColor);
+                      "
+                    >
+                      TECH STACK:
+                    </h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul style="font-size: 18px; line-height: 2">
+                          <li>Programming Language: Python</li>
+                          <li>Machine Learning Frameworks: Scikit-learn</li>
+                          <li>
+                            Deep Learning Frameworks: TensorFlow, Keras,
+                            Ultralytics
+                          </li>
+                          <li>
+                            AI/ML Areas: Computer Vision, Natural Language
+                            Processing, Data Science
+                          </li>
+                          <li>Tools: Anaconda</li>
+                          <li>Data Visualization: Matplotlib, Seaborn</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul style="font-size: 18px; line-height: 2">
+                          <li>Web Development: HTML, CSS, Python</li>
+                          <li>Frameworks: Flask, Bootstrap</li>
+                          <li>Database: MySQL</li>
+                          <li>Version Control: Git, GitHub</li>
+                          <li>
+                            IDE: Visual Studio Code, PyCharm, Jupyter Notebook,
+                            Google Colab, Kaggle Notebook
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <h4
+                      class="mb-3"
+                      style="
+                        font-family: 'Press Start 2P', cursive;
+                        font-size: 14px;
+                        color: var(--acsentColor);
+                      "
+                    >
+                      EXPERIENCE:
+                    </h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul style="font-size: 18px; line-height: 2">
+                          <li>MSIB Program at PT Orbit Ventura Indonesia</li>
+                          <li>Magang at Anaheim Nimbus Universal</li>
+                          <li>Bootcamp at IDCamp Indosat Ooredoo Hutchison</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-5">
+                    <div class="terminal-window d-inline-block">
+                      <div class="terminal-content">
+                        Age: 22 years<br />
+                        Status: Active Learning<br />
+                        Focus: AI & Web Development<br />
+                        Dream: AI Engineer, ML Engineer, & Gen AI Engineer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="content-section" style="display: none">
+        <div class="section-container">
+          <h5 class="section-title">PORTFOLIO</h5>
+          <div class="container">
+            <div class="portfolio-tabs">
+              <button class="portfolio-tab active" data-category="all">
+                ALL
+              </button>
+              <button class="portfolio-tab" data-category="kuliah">
+                TUGAS KULIAH
+              </button>
+              <button class="portfolio-tab" data-category="capstone">
+                PROYEK CAPSTONE/MAGANG
+              </button>
+              <button class="portfolio-tab" data-category="sertifikat">
+                SERTIFIKAT
+              </button>
+            </div>
+            <div class="portfolio-grid">
+              <!-- PERBAIKAN: Mengembalikan tautan gambar asli dan data-images -->
+              <!-- CONTOH: Menambahkan beberapa gambar ke data-images. Cukup tambahkan koma dan path gambar baru di dalam kurung siku -->
+              <div
+                class="portfolio-item"
+                data-category="kuliah"
+                data-images='["IMG/Capture.PNG", "IMG/Capture1.PNG", "IMG/Capture3.PNG"]'
+              >
+                <img src="IMG/Capture.PNG" alt="Tugas Kuliah 1" />
+                <div class="portfolio-overlay">
+                  <h5>Tugas Kuliah Pemrograman Web</h5>
+                  <p>Proyek tugas kuliah implementasi framework bootstrap.</p>
+                </div>
+              </div>
+              <div
+                class="portfolio-item"
+                data-category="kuliah"
+                data-images='["IMG/Capture4.PNG"]'
+              >
+                <img src="IMG/Capture4.PNG" alt="Tugas Kuliah 4" />
+                <div class="portfolio-overlay">
+                  <h5>Tugas Kuliah Pemrograman Web</h5>
+                  <p>Proyek tugas kuliah implementasi HTML Form.</p>
+                </div>
+              </div>
+              <div
+                class="portfolio-item"
+                data-category="kuliah"
+                data-images='["IMG/Capture5.PNG"]'
+              >
+                <img src="IMG/Capture5.PNG" alt="Tugas Kuliah 5" />
+                <div class="portfolio-overlay">
+                  <h5>Tugas Kuliah Pemrograman Web</h5>
+                  <p>Proyek tugas kuliah membuat data diri.</p>
+                </div>
+              </div>
+              <div
+                class="portfolio-item"
+                data-category="kuliah"
+                data-images='["IMG/WhatsApp Image 2024-08-12 at 20.40.42.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.41.40.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.42.13.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.42.24.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.42.35.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.42.49.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.42.59.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.43.16.jpeg", "IMG/WhatsApp Image 2024-08-12 at 20.44.04.jpeg"]'
+              >
+                <img
+                  src="IMG/WhatsApp Image 2024-08-12 at 20.40.42.jpeg"
+                  alt="Tugas Kuliah Pemrograman Web 2"
+                />
+                <div class="portfolio-overlay">
+                  <h5>Tugas Kuliah Pemrograman Web 2</h5>
+                  <p>Membuat Sistem Informasi Koperasi dengan Laravel.</p>
+                </div>
+              </div>              
+              <div
+                class="portfolio-item"
+                data-category="capstone"
+                data-images='["IMG/image.png", "IMG/Picture.png", "IMG/Picture2.png", "IMG/Picture3.png"]'
+              >
+                <img src="IMG/image.png" alt="Capstone Project 1" />
+                <div class="portfolio-overlay">
+                  <h5>
+                    Group Capstone Project (MSIB AI 4 Jobs at Orbit Future
+                    Academy)
+                  </h5>
+                  <p>
+                    NANASCAN: Deteksi Otomatis Kualitas Buah Nanas dengan
+                    Teknologi Computer Vision untuk Bisnis Olahan Nanas
+                  </p>
+                </div>
+              </div>
+              <div
+                class="portfolio-item"
+                data-category="sertifikat"
+                data-files='["IMG/sertifikat/713.MOCHAMAD TIRTA BENING.pdf",
+                 "IMG/sertifikat/Mochamad Tirta Bening.pdf",
+                 "IMG/sertifikat/Mochamad Tirta Bening_IDCAMP Menengah.pdf",
+                 "IMG/sertifikat/sertifikat_course_86_3159025_161124114923.pdf",
+                 "IMG/sertifikat/sertifikat_course_177_3159025_031124122104.pdf",
+                 "IMG/sertifikat/sertifikat_course_184_3159025_290125092441.pdf",
+                 "IMG/sertifikat/sertifikat_course_570_3159025_270824063434.pdf",
+                 "IMG/sertifikat/sertifikat_course_653_3159025_060924080515.pdf"]'
+              >
+                <img src="IMG/sertifikat/image1.png" alt="Sertifikat PDF 1" />
+                <div class="portfolio-overlay">
+                  <h5>Sertifikat Bootcamp AI</h5>
+                  <p>Sertifikat Bootcamp AI</p>
+                </div>
+              </div>
+              <div
+                class="portfolio-item"
+                data-category="sertifikat"
+                data-files='["IMG/sertifikat/MOCHAMAD TIRTA BENING-tirtabening13@gmail.pdf",
+                "IMG/sertifikat/devcoach-155-data-science-memahami-algoritma-machine-learning-untuk-data-science-certificate.pdf",
+                "IMG/sertifikat/idcamp-alumni-dialogue-6-beyond-automation-timeless-skills-in-the-age-of-ai-certificate.pdf",
+                "IMG/sertifikat/E-Certificate 2741.png",
+                "IMG/sertifikat/41.png",
+                "IMG/sertifikat/Sertifikat Seminar fiki __Nama__.pdf"]'
+              >
+                <img
+                  src="IMG/sertifikat/image2.png"
+                  alt="Sertifikat PDF 2"
+                />
+                <div class="portfolio-overlay">
+                  <h5>Sertifikat Seminar IT</h5>
+                  <p>Sertifikat Seminar IT</p>
+                </div>
+              </div>
+              <div
+                class="portfolio-item"
+                data-category="sertifikat"
+                data-files='["IMG/sertifikat/SERTIFIKAT LDKM PANITIA Tirta1.png", 
+                "IMG/sertifikat/E-Sertifikat_Mochamad Tirta Bening.pdf",
+                "IMG/sertifikat/192.png"]'
+              >
+                <img
+                  src="IMG/sertifikat/SERTIFIKAT LDKM PANITIA Tirta.png"
+                  alt="Sertifikat PDF 3"
+                />
+                <div class="portfolio-overlay">
+                  <h5>Sertifikat Kepanitiaan di Kampus</h5>
+                  <p>Sertifikat Kepanitiaan di Kampus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="content-section" style="display: none">
+        <div class="section-container">
+          <h5 class="section-title">CONTACT</h5>
+          <div class="container">
+            <form action="https://formspree.io/f/mblpnewy" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input class="form-control" id="name" name="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-custom">
+                <i class="fas fa-paper-plane me-2"></i>Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="portfolio-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-images">
+          <!-- Gambar modal akan dimasukkan oleh JS di sini -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="text-center mt-5 mb-3"
+      style="
+        color: var(--acsentColor);
+        font-family: 'Press Start 2P', cursive;
+        font-size: 10px;
+      "
+    >
+      &copy; 2025 Mochamad Tirta Bening. All rights reserved. Some icons by
+      <a href="https://icons8.com/">Icons8</a>.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <!-- PERBAIKAN: Path diubah dari js/script.js menjadi script.js agar file termuat -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
